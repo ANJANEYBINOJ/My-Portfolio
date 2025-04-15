@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+
+            <!-- Hamburger icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="intro" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="Images/Me.jpg" alt="Profile photo of Anjaney Binoj" class="profile-img">
+            </div>
+            <h1 class="hero-title">Hi, I'm <span class="name">Anjaney Binoj</span></h1>
+            <h2 class="typing">Frontend Developer | Designer | Coder </h2>
+            <p class="hero-text">
+                Passionate about crafting smooth user experiences, elegant interfaces, and responsive designs that tell
+                a story.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="experience-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-wrapper">
+            <div class="experience-card left">
+                <h3>Frontend Developer</h3>
+                <p class="company">PixelPerfect Agency</p>
+                <span class="duration">2022 - Present</span>
+                <p>Developed responsive interfaces, worked with animations, and built components using HTML, CSS, JS,
+                    and React.</p>
+            </div>
+            <div class="experience-card right">
+                <h3>UI/UX Designer</h3>
+                <p class="company">DesignWave Studio</p>
+                <span class="duration">2020 - 2022</span>
+                <p>Created wireframes, designed layouts, and collaborated with developers to ensure consistent UI
+                    implementations.</p>
+            </div>
+            <div class="experience-card left">
+                <h3>Intern - Web Development</h3>
+                <p class="company">TechNova Solutions</p>
+                <span class="duration">2019 - 2020</span>
+                <p>Assisted in building responsive websites and maintaining internal tools using HTML/CSS and Bootstrap.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-wrapper">
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS / SCSS</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Figma</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 60%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-front">
+                    <img src="Images/1.jpeg" alt="Project 1 Screenshot">
+                    <h3>Portfolio Website</h3>
+                </div>
+                <div class="project-back">
+                    <p>A fully responsive personal portfolio built using HTML, CSS animations, and a splash of JS for
+                        interactivity.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-front">
+                    <img src="Images/2.jpeg" alt="Project 2 Screenshot">
+                    <h3>Landing Page</h3>
+                </div>
+                <div class="project-back">
+                    <p>Clean product landing page with animations on scroll, parallax background, and smooth navigation
+                        effects.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-front">
+                    <img src="Images/3.jpeg" alt="Project 3 Screenshot">
+                    <h3>To-Do App</h3>
+                </div>
+                <div class="project-back">
+                    <p>Interactive to-do list app with custom animations, local storage support, and drag-and-drop
+                        features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="socials" class="socials-section">
+        <h2 class="section-title">Connect with Me</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Send</span>
+                <span class="airplane">✈</span>
+            </button>
+        </form>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p>© 2025 Alex Johnson. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="#intro" class="back-to-top">↑ Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
